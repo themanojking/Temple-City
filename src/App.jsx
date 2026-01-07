@@ -1,13 +1,17 @@
 import React from 'react'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   return (
-    <div>
-      <h1 className='text-5xl text-red-500 font-bold'>Heritage - Temples city</h1>
-      <h3>MiniProject for final year</h3>
-      <h5>final demo4</h5>
-      <h3>last one</h3>
-    </div>
+    <>
+     <BrowserRouter>
+       <Routes>
+         <Route path='/' element={<Navbar />}></Route>
+       </Routes>
+     </BrowserRouter>
+    
+    </>
   )
 }
 
