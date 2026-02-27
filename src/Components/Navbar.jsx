@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +17,10 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6 gap-14">
-            <a href="#" className="hover:text-gray-400">Home</a>
-            <a href="#" className="hover:text-gray-400">All Temples</a>
-            <a href="#" className="hover:text-gray-400">About</a>
-            <a href="#" className="hover:text-gray-400">Contact</a>
+            <Link to='/'><a className="hover:text-gray-400">Home</a></Link>
+            <Link to='/'><a className="hover:text-gray-400">All Temples</a></Link>
+           <Link to='/'><a className="hover:text-gray-400">About</a></Link>
+            <Link to='/'></Link><a className="hover:text-gray-400">Contact</a>
           </div>
 
           {/* Mobile Menu Button */}
